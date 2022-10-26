@@ -37,5 +37,5 @@ This repository has been cloned to the EC2 instance and the glue.py is scheduled
 
 This process has currently been set up such that a user will refresh the dashboard site to see updated new data from dynamodb every morning at 10:38 and 04:04 UTC. I would recommend users to be able to use linux and have knowledge of some ubuntu commands as this is all in-terminal. Additionally, the site currently requires log-ins to view and these have not yet been hidden.
 
-The EC2 instance is always on and uses very little credits
-Heroku account is not verified so you will see ‘insecure’ and they are apparently cancelling free dynos by the end of November
+*The EC2 instance is always on and uses very little credits to run scheduled twice daily
+*Heroku account is not verified so you will see ‘insecure’ and they are apparently cancelling free dynos by the end of November
