@@ -16,7 +16,7 @@ Found at the following repository is the dashboard.py file which can be ran on h
 
 https://github.com/elastikdatateam/dashboard
 
-![gif2](https://user-images.githubusercontent.com/83471877/197993034-c62b896b-d16b-4658-b9ed-9af62b7405be.gif) ![gif1](https://user-images.githubusercontent.com/83471877/197993132-30b19f57-80c2-4139-bb4b-03c8094cf0b4.gif)
+![gif2](https://user-images.githubusercontent.com/83471877/197993034-c62b896b-d16b-4658-b9ed-9af62b7405be.gif) 
 
 What should also be noted is that there are txt files containing SQL queries, and data-helpers which help transform resulting csv files into the formatted dataframes needed for displaying.
 
@@ -26,6 +26,8 @@ The first important python script is the glue.py file. There is a function in th
 This repository has been cloned to the EC2 instance and the glue.py is scheduled to run on there as a cron job. Any data-code updates would need to be pulled on there. Any dash-code changes will need to be pushed to heroku. This job will run a few minutes before the heroku restart runs which gives the new information on the dashboard website. You must log in to heroku in order to push restarts to your app as well as create a new ‘herkou’ git remote, and it is recommended to be logged into the github account elsewhere for making fast and easy pushes. There is still work to be done improving the code as it was written pretty quickly, one area for improvement is to remove waits and instead when reading into the dashboard file check the csv columns as the decider for hashmap assignment rather than datetime modified.
 
 This process has currently been set up such that a user will refresh the dashboard site to see updated new data from dynamodb every morning at 10:38 and 04:04 UTC. I would recommend users to be able to use linux and have knowledge of some ubuntu commands as this is all in-terminal. Additionally, the site currently requires log-ins to view and these have not yet been hidden.
+
+![gif1](https://user-images.githubusercontent.com/83471877/197993132-30b19f57-80c2-4139-bb4b-03c8094cf0b4.gif)
 
 The EC2 instance is always on and uses very little credits
 Heroku account is not verified so you will see ‘insecure’ and they are apparently cancelling free dynos by the end of November
