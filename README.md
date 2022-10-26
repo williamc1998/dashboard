@@ -16,7 +16,8 @@ Found at the following repository is the dashboard.py file which can be ran on h
 
 https://github.com/elastikdatateam/dashboard
 
-![gif2](https://user-images.githubusercontent.com/83471877/197993034-c62b896b-d16b-4658-b9ed-9af62b7405be.gif) 
+<img src="https://user-images.githubusercontent.com/83471877/197993034-c62b896b-d16b-4658-b9ed-9af62b7405be.gif"/>
+
 
 What should also be noted is that there are txt files containing SQL queries, and data-helpers which help transform resulting csv files into the formatted dataframes needed for displaying.
 
