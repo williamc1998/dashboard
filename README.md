@@ -21,7 +21,7 @@ https://github.com/elastikdatateam/dashboard
 
 
 
-![gif](https://imgur.com/ZpSIv1u)
+![gif](https://gfycat.com/fondquarterlycirriped)
 
 
 
