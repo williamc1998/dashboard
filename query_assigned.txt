@@ -1,0 +1,5 @@
+select distinct testName, schoolName,assignedDate from "assessment-quejgnbhnrhlddszgzndnk7nx4-ukprod" assign
+left join "test-quejgnbhnrhlddszgzndnk7nx4-ukprod" tests on assign.testID = tests.id
+left join "school-quejgnbhnrhlddszgzndnk7nx4-ukprod" schools on assign.schoolID = schools.id
+group by testName,testID,schoolName,assignedDate
+order by assignedDate desc

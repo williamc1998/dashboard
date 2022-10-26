@@ -1,0 +1,4 @@
+select  CAST(from_iso8601_timestamp("lastsignin") as date), count(distinct userid) as users
+FROM "user-quejgnbhnrhlddszgzndnk7nx4-ukprod"
+group by CAST(from_iso8601_timestamp("lastsignin") as date)
+order by CAST(from_iso8601_timestamp("lastsignin") as date) desc

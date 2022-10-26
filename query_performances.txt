@@ -1,0 +1,13 @@
+SELECT testName,avg((cast(score as int)/questionCount)*100) as score,schoolName,count(distinct studentId) as number_students,dueDate,testid FROM "assessment-quejgnbhnrhlddszgzndnk7nx4-ukprod" assessment
+
+
+
+left join "school-quejgnbhnrhlddszgzndnk7nx4-ukprod" schools on assessment.schoolid = schools.id
+left join "test-quejgnbhnrhlddszgzndnk7nx4-ukprod" tests on assessment.testid = tests.id
+
+
+
+where schoolName <> 'Best Performance School' and schoolname <> 'Elastik Demonstration School' and isComplete = true
+group by testName,schoolName,dueDate,testid
+having avg((cast(score as int)/questionCount)*100) > 0 and count(distinct studentId) > 10
+order by testName

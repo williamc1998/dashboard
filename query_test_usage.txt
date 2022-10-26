@@ -1,0 +1,13 @@
+SELECT  count(isstarted) as total_assigned,
+        count(case when isstarted=true then 1 end) as started,
+        count(case when iscomplete=true then 1 end) as completed,
+        schoolName,
+        cast(count(case when iscomplete=true then 1 end) as real)/cast(count(isstarted) as real) as assignedcomplete,
+        cast(count(case when iscomplete=true then 1 end) as real)/cast(count(case when isstarted=true then 1 end) as real) as startedcomplete,
+        cast(count(case when isstarted=true then 1 end) as real)/cast(count(isstarted) as real) as assignedstarted
+
+
+
+       FROM "assessment-quejgnbhnrhlddszgzndnk7nx4-ukprod" ass
+left join "school-quejgnbhnrhlddszgzndnk7nx4-ukprod" school on school.id = ass.schoolid
+group by schoolName
