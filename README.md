@@ -16,13 +16,12 @@ Found at the following repository is the dashboard.py file which can be ran on h
 
 https://github.com/elastikdatateam/dashboard
 
-![gif2](https://user-images.githubusercontent.com/83471877/197991608-31e38567-d627-4f46-afde-73f49dc1b494.gif)
+![gif2](https://user-images.githubusercontent.com/83471877/197991608-31e38567-d627-4f46-afde-73f49dc1b494.gif) ![gif1](https://user-images.githubusercontent.com/83471877/197991684-783e974d-b2d3-419c-9a15-c6ab815b05ad.gif)
 
 What should also be noted is that there are txt files containing SQL queries, and data-helpers which help transform resulting csv files into the formatted dataframes needed for displaying.
 
 The first important python script is the glue.py file. There is a function in this script called query which takes in a sql query and an output location (the bucket) using boto3 (package you should become familiar with). There is another function which updates the data in s3 by first deleting any if need be and then calling the prior function - a key reason why I decided to do this and not use Glue. Keep in mind that for any script related to aws to run you need to create a client using your AWS keys, and keep these keys out of the code - I have put them as heroku environment variables for the dashboard and for the other scripts I have read them from a local file saved on EC2.
 
-![gif1](https://user-images.githubusercontent.com/83471877/197991684-783e974d-b2d3-419c-9a15-c6ab815b05ad.gif)
 
 This repository has been cloned to the EC2 instance and the glue.py is scheduled to run on there as a cron job. Any data-code updates would need to be pulled on there. Any dash-code changes will need to be pushed to heroku. This job will run a few minutes before the heroku restart runs which gives the new information on the dashboard website. You must log in to heroku in order to push restarts to your app as well as create a new ‘herkou’ git remote, and it is recommended to be logged into the github account elsewhere for making fast and easy pushes. There is still work to be done improving the code as it was written pretty quickly, one area for improvement is to remove waits and instead when reading into the dashboard file check the csv columns as the decider for hashmap assignment rather than datetime modified.
 
