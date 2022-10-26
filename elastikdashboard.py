@@ -15,17 +15,6 @@ from data_helpers import *
 from s3fs.core import S3FileSystem
 import os
 
-# df = pd.read_csv('cbddae2e-2e01-4d62-8884-b897ac09ab54.csv')
-# today = datetime.date.today()
-# last_month = (today - datetime.timedelta(days=30)).strftime('%Y-%m-%d')
-
-# df_average_month1 = int(round(df[df['_col0'] > last_month].mean()))
-# df_average_year = round(df['users'].mean())
-# average = pd.read_csv('avg.csv', index_col=1, parse_dates=True)
-# average = average.drop(average.tail(5).index)
-# school_tests = pd.read_csv('tests_assigned.csv').T
-# school_performance = pd.read_csv('comparisons.csv')
-
 # get set up
 # with open('/Users/william/Desktop/Elastik/awskeys/keys.txt') as keys:
 #     lines = keys.readlines()§
