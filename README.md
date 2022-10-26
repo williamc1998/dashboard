@@ -21,7 +21,7 @@ https://github.com/elastikdatateam/dashboard
 
 
 
-![gif](ezgif-5-4eb39a9fac.gif)
+<img src="ezgif-5-4eb39a9fac.gif" width="350" height="350"/>
 
 
 
