@@ -39,3 +39,8 @@ This process has currently been set up such that a user will refresh the dashboa
 
 * The EC2 instance is always on and uses very little credits to run scheduled twice daily
 * Heroku account is not verified so you will see ‘insecure’ and they are apparently cancelling free dynos by the end of November
+
+
+
+
+
