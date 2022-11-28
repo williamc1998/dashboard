@@ -41,8 +41,7 @@ This process has currently been set up such that a user will refresh the dashboa
 * Heroku account is not verified so you will see ‘insecure’ and they are apparently cancelling free dynos by the end of November
 
 
-<img src="https://i.imgur.com/Ve2l3kZ.png" width="300" height="223"/>
-<img src="https://i.imgur.com/21CSXM4.png" width="300" height="223"/>
+<img src="https://i.imgur.com/Ve2l3kZ.png" width="300" height="223"/> <img src="https://i.imgur.com/21CSXM4.png" width="300" height="223"/>
 
 
 
